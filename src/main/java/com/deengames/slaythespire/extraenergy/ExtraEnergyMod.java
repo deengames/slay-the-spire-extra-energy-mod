@@ -25,8 +25,11 @@ public class ExtraEnergyMod implements ISubscriber, OnPlayerTurnStartSubscriber
 	public void receiveOnPlayerTurnStart()
 	{
 		AbstractPlayer player = AbstractDungeon.player;
-		player.energy.energy = STARTING_ENERGY;
-		// Start the first round with 4/4, not 3/4 energy!
-		player.gainEnergy(1);
+		if (player.energy.energy < 4)
+		{
+			player.energy.energy = STARTING_ENERGY;
+			// Start the first round with 4/4, not 3/4 energy!
+			player.gainEnergy(1);
+		}
 	}
 }
