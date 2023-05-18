@@ -6,7 +6,7 @@ Feeling tired? Need more energy? Now you can start the game with four energy ins
 
 # Installation Instructions
 
-[Download from Steam Workshop]().
+[Download from Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2977410511).
 
 # Development Setup
 
